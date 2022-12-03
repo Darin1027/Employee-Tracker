@@ -10,7 +10,15 @@ build out schema/table
 
 build out seed data
 
-import modules into variables needed in the server.js
+build out index.js
+    import modules
+
+build out questionsArray.js
+
+build classes.js
+    departments
+    roles
+    employees
 
 
 
