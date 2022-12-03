@@ -27,59 +27,26 @@ VALUES
 (16, "Legal Manager", 250000, 6),
 (17, "Consultant", 200000, 6),
 (18, "Lawyer", 150000, 6),
+(19, "CEO", 500000, 3);
 
-INSERT INTO employee ()
+INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
 VALUES 
-(),
-
-
-
--- DROP DATABASE IF EXISTS company_db;
--- CREATE DATABASE company_db;
-
--- USE company_db;
-
--- CREATE TABLE department (
---     id INT PRIMARY KEY,
---     name VARCHAR(30)
--- );
-
--- CREATE TABLE role (
---     id INT PRIMARY KEY,
---     title VARCHAR(30),
---     salary DECIMAL,
---     department_id INT
--- );
-
--- CREATE TABLE employee (
---     id INT PRIMARY KEY,
---     first_name VARCHAR(30),
---     last_name VARCHAR(30),
---     role_id INT,
---     manager_id INT
--- );
-
-
--- WHEN I start the application
--- THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
-
--- WHEN I choose to view all departments
--- THEN I am presented with a formatted table showing department names and department ids
-
--- WHEN I choose to view all roles
--- THEN I am presented with the job title, role id, the department that role belongs to, and the salary for that role
-
--- WHEN I choose to view all employees
--- THEN I am presented with a formatted table showing employee data, including employee ids, first names, last names, job titles, departments, salaries, and managers that the employees report to
-
--- WHEN I choose to add a department
--- THEN I am prompted to enter the name of the department and that department is added to the database
-
--- WHEN I choose to add a role
--- THEN I am prompted to enter the name, salary, and department for the role and that role is added to the database
-
--- WHEN I choose to add an employee
--- THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
-
--- WHEN I choose to update an employee role
--- THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
+(1, "Iron", "Man", 18, 16),
+(2, "Spider", "Man", 17, 16),
+(3, "The", "Hulk", 16, 19),
+(4, "Doctor", "Strange", 15, 13),
+(5, "Captian", "America", 14, 13),
+(6, "Ant", "Man", 13, 19),
+(7, "Hawk", "Eye", 12, 10),
+(8, "Black", "Panther", 11, 10),
+(9, "Professor", "Xavier", 10, 19),
+(10, "Mag", "Neto", 9, 7),
+(11, "Scott", "Summers", 8, 7),
+(12, "Unstoppable", "Juggernaut", 7, 19),
+(13, "Night", "Crawler", 6, 4),
+(14, "Silver", "Surfer", 5, 4),
+(15, "Human", "Torch", 4, 19),
+(16, "Invisible", "Woman", 3, 1),
+(17, "Reed", "Richards", 2, 1),
+(18, "Jean", "Grey", 1, 19),
+(19, "Darin", "Palombo", 19, 19);
