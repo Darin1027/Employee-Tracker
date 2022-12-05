@@ -1,6 +1,66 @@
-// TODO import modules
+// import modules
+const inquirer = require("inquirer");
+const mysql = require("mysql2");
+const connection = require("./db/connection");
+// Import the connection object
+const app = express();
+const PORT = process.env.PORT || 3001;
 
-// TODO function to start the application
+// middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// start app
+init();
+
+//  function to initialize app
+function init() {
+  inquirer.prompt(questions).then(function (data) {
+    console.log(data);
+  });
+}
+// TODO-- add initial questions
+// WHEN I start the application
+// THEN I am presented with the following options: view all departments, view all roles, view all employees, add a department, add a role, add an employee, and update an employee role
+function startQuestions() {
+  prompt([
+    {
+      type: "list",
+      name: "choices",
+      messages: "Select an option.",
+      choices: [
+        {
+          name: "View all departments",
+          value: "VIEW_ALL_DEPARTMENTS",
+        },
+        {
+          name: "View all roles",
+          value: "VIEW_ALL_ROLES",
+        },
+        {
+          name: "View all employees",
+          value: "VIEW_ALL_EMPLOYEES",
+        },
+        {
+          name: "Add a department",
+          value: "ADD_A_DEPARTMENT",
+        },
+        {
+          name: "Add a role",
+          value: "ADD_A_ROLE",
+        },
+        {
+          name: "Add an employee",
+          value: "ADD_AN_EMPLOYEE",
+        },
+        {
+          name: "Update an employee",
+          value: "UPDATE_AN_EMPLOYEE",
+        },
+      ],
+    },
+  ]);
+}
 
 // TODO-- add a department
 // WHEN I choose to add a department
