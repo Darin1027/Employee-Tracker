@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Darin1027/Employee-Tracker#readme",
   "dependencies": {
+    "ascii-art": "^2.8.5",
+    "asciiart-logo": "^0.2.7",
     "console.table": "^0.10.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
