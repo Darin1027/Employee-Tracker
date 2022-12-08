@@ -54,10 +54,10 @@ dplb1027@gmail.com
 
 ## Link to sample deployed Employee Tracker video:
 
-
+https://watch.screencastify.com/v/R7KMRZIj92K1l1rmbtTZ
 
 ## Screenshots of deployed Employee Tracker:
 
-- ![Image Site](./)
+- ![Image Site](./photos/Screenshot1.png)
 
-- ![Image Site](./)
+- ![Image Site](./photos/Screenshot2.png)
